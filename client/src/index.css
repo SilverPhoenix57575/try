@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles for better text visibility */
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #ffffff !important;
+}
+
+/* Add contrast to cards and containers */
+.card,
+.container,
+.premium-card,
+.premium-glass {
+  color: #ffffff;
+}
+
+/* Ensure links are visible */
+a {
+  color: #6366f1;
+}
+
+a:hover {
+  color: #818cf8;
+}
+
+/* Enhanced premium border */
+.premium-border {
+  position: relative;
+  border-radius: var(--radius-lg, 16px);
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+  border: 1px solid rgba(99, 102, 241, 0.5);
+}
+
+/* Fix for dark text on dark backgrounds */
+.premium-card,
+.premium-glass,
+.premium-border {
+  background-color: #111111;
+  color: white;
+}
